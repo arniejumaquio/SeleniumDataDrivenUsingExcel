@@ -95,6 +95,7 @@ public class GetDataFromExcelUtility {
             for(int j =0; j < columnCount; j++){
 
                 XSSFCell cell = xssfSheet.getRow(i+1).getCell(j);
+
                 if(cell.getCellType() == CellType.STRING){
                     data[i][j] = cell.getStringCellValue();
                 }else if(cell.getCellType() == CellType.NUMERIC){
