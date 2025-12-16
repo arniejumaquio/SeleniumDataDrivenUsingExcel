@@ -18,7 +18,7 @@ public class SampleTests2 {
     public void test() throws IOException {
 
         GetDataFromExcelUtility getDataFromExcelUtility = new GetDataFromExcelUtility();
-        ArrayList<String> testData = getDataFromExcelUtility.getData("Purchase");
+        ArrayList<String> testData = getDataFromExcelUtility.getData("src/main/resources/TestData.xlsx", "Sheet1", "TestCases", "Login");
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless=new");
